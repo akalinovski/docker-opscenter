@@ -4,7 +4,8 @@ FROM abh1nav/python
 
 MAINTAINER Abhinav Ajgaonkar <abhinav316@gmail.com>
 
-ADD opscenter-5.2.4.tar.gz /opt/opscenter
+ADD opscenter-5.2.4.tar.gz /opt
+RUN mv /opt/opscenter-5.2.4 /opt/opscenter
 ADD	. /src
 
 # Copy over daemons
