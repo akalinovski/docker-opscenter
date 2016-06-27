@@ -15,7 +15,7 @@ RUN	\
   ln -s /opt/opscenter/log /var/log/opscenter;
 
 # Expose ports
-EXPOSE 8888
+EXPOSE 8888 61620
 
 WORKDIR /opt/opscenter
 
